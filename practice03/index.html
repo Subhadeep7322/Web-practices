@@ -3,24 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uber</title>
+    <title>UBER</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/practice03/dog.png">
 </head>
 <body>
     <header>
-        <a href="index.html">UBER</a>
+        <div class="logo">
+            <a href="#">Uber</a>
+        </div>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Ride Category</li>
-                <li>Bookings</li>
-                <li>Contact us</li>
+                <li><a href="#">Ride</a></li>
+                <li><a href="#">Drive</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </nav>
-        <div class="log">
-            <button>Log in</button>
-            <button>Sign up</button>
+        <div class="logs">
+            <a href="#">Log in</a>
+            <a href="#">Sign up</a>
         </div>
     </header>
+    <section class="ride">
+        <div class="left">
+            <section class="top">
+                <h1>Request a ride for <br> now or later</h1>
+            </section>
+            <section class="bottom">
+                <h3>Add your trip details, hop in, and go.</h3>
+                <div class="trip">
+                    <!-- this is the trip adding feature added in the main screen -->
+                     <input type="text" placeholder="Enter pickup location"> 
+                     <input type="text" placeholder="Enter drop location">
+                </div>
+                <button type="submit">Book now<img src="/practice03/right-arrow-in-a-circle.png" alt=""></button>
+            </section>
+        </div>
+        <div class="right">
+            <img src="/practice03/Picture1.png" alt="">
+        </div>
+    </section>
 </body>
 </html>
