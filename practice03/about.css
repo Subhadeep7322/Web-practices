@@ -6,7 +6,8 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    overflow-x: hidden;
 }
 
 
@@ -93,101 +94,95 @@ nav a:hover {
     border-bottom: 3px solid white;
 }
 
-/* this is the main body */
+/* this is the main body of the about page */
 
-.ride {
+.container {
     width: 100vw;
-    height: 92vh;
+    height: auto;
+}
+
+.container .intro {
+    width: 100vw;
+    height: 60vh;
+    background: url(/practice03/Untitled\ design.jpg);
+    background-attachment: fixed;
+}
+
+.intro .left {
+    width: 60vw;
+    height: 60vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.827), rgba(255, 255, 255, 0.641), rgba(255, 255, 255, 0));
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 1vw 10vh;
 }
 
-.ride .left {
-    width: 60vw;
-    height: 62vh;
-    padding-left: 10vw;
-    margin: auto 0;
-    /* background-color: yellowgreen; */
-}
-
-/* this is the top section of the left section of the intro */
-
-.left .top {
-    width: 60vw;
-    height: 22vh;
-}
-
-.top h1 {
+.intro .left h1 {
     font-size: 3rem;
-    /* font-weight: 600; */
-    letter-spacing: 1.5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+/* this is the intro section of the about page */
+
+.container .first {
+    width: 100vw;
+    height: 32vh;
+    padding: 10vh 4vw;
+    background-color: black;
+}
+
+.first h1 {
+    font-size: 3rem;
+    color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* this is the bottom section of the left section  intro  */
+.first span {
+    font-size: 1.2rem;
+    color: #4f6f79;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-.left .bottom {
+.first p {
+    color: white;
+    font-family: arial;
+    font-size: .8rem;
+    padding-top: 2vh;
+    padding-left: .5vw;
+    letter-spacing: 1px;
+}
+
+/* this is the founding history of uber */
+
+.container .found {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+}
+
+.found .left {
+    width: 40vw;
+    height: 60vh;
+    background: url(/practice03/uber-office.avif);
+    background-size: cover;
+}
+
+.found .right {
     width: 60vw;
-    height: 42vh;
-}
-
-.bottom h3 {
-    font: 1rem arial;
-}
-
-.bottom .trip {
-    width: 30vw;
-    height: 20vh;
-    /* background-color: aqua; */
+    height: 60vh;
     display: flex;
     flex-direction: column;
-}
-
-.trip input {
-    width: 25vw;
-    height: 5vh;
-    margin-top: 5vh;
-    border-radius: 35px;
-    border: 1px solid grey;
-    padding-left: 1.3vw;
-}
-
-/* this is the button of the trip feature */
-
-.bottom button {
-    width: 10vw;
-    height: 5vh;
-    margin-top: 5vh;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-right: .3vw;
-    padding-left: 2vw;
-    font: arial;
-    font-weight: 600;
-    border-radius: 35px;
-    background-color: white;
-    border: 1px solid gray;
-    box-shadow: 3px 3px rgb(38, 24, 24);
+    justify-content: center;
+    padding: 0 2vw;
 }
 
-.bottom button img {
-    height: 1.5rem;
-}
-
-.bottom button:hover {
-    cursor: pointer;
-}
-
-/* this is the right section of the of the intro */
-
-.ride .right {
-    width: 40vw;
-    height: 92vh;
-    display: flex;
-    align-items: center;
-}
-
-.right img {
-    height: 25rem;
-    border-radius: 35px;
+.right p {
+    font-size: 1rem;
+    font-family: arial;
+    line-height: 5vh;
+    margin-top: 3vh;
 }
