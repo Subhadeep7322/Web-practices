@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/practice03/dog.png">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="logo">
+            <a href="#">Uber</a>
+        </div>
+        <!-- NAVIGATION BAR -->
+        <nav>
+            <ul>
+                <li><a href="#">Ride</a></li>
+                <li><a href="#">Drive</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- LOG-IN OPTIONS -->
+        <div class="logs">
+            <a href="login.html">Log in</a>
+            <a href="signup.html">Sign up</a>
+        </div>
+    </header>
+    <!-- this is the ride booking section -->
+    <section class="ride">
+        <div class="left">
+            <section class="top">
+                <h1>Request a ride for <br> now or later</h1>
+            </section>
+            <section class="bottom">
+                <h3>Add your trip details, hop in, and go.</h3>
+                <div class="trip">
+                    <!-- this is the trip adding feature added in the main screen -->
+                     <input type="text" placeholder="Enter location"> 
+                     <input type="text" placeholder="Enter destination">
+                </div>
+                <button type="submit">Book now<img src="/practice03/right-arrow-in-a-circle.png" alt=""></button>
+            </section>
+        </div>
+        <div class="right">
+            <img src="/practice03/Picture1.png" alt="">
+        </div>
+    </section>
+    <!--                                        SUGGESTIONS SPACE -->
+     <section class="suggest">
+        <h1 id="sgst">Suggestions</h1>
+        <!--                                    CARDS SECTION -->
+        <div class="cards">
+            <!--                                CARD 001 -->
+            <article class="one">
+                <div class="left">
+                    <h1>Ride</h1>
+                    <p>Go anywhere with Uber. Request a ride, hop in, and go.</p>
+                    <button type="submit">Details</button>
+                </div>
+                <div class="right"><img src="/practice03/cards-one.png" alt=""></div>
+            </article>
+            <!--                                CARD 002 -->
+            <article class="two">
+                <div class="left">
+                    <h1>Rent</h1>
+                    <p>Rent a vehicle and explore the places that is in you wishlist</p>
+                    <button type="submit">Details</button>
+                </div>
+                <div class="right"><img src="/practice03/card-two.png" alt=""></div>
+            </article>
+            <!--                                CARD 003 -->
+            <article class="three">
+                <div class="left">
+                    <h1>Package</h1>
+                    <p>Uber makes same-day item delivery easier than ever</p>
+                    <button type="submit">Details</button>
+                </div>
+                <div class="right"><img src="/practice03/cards-three.png" alt=""></div>
+            </article>
+        </div>
+     </section>
+</body>
+</html>
